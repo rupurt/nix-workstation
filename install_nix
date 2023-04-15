@@ -1,0 +1,21 @@
+#!/bin/sh
+
+# ===================================================================
+# nix - https://nixos.org/download.html
+# ===================================================================
+
+install_nix()
+{
+  INSTALL_URI=https://nixos.org/nix/install
+  echo "installing nix from $INSTALL_URI"
+
+  curl -sSf -L $INSTALL_URI | sh -s
+}
+
+# install nix if it's not currently installed and activated
+NIX_VERSION=$(nix --version)
+if [ $? -eq 0 ]; then
+  echo "nix is already installed version=[$NIX_VERSION]"
+else
+  install_nix
+fi

@@ -1,0 +1,44 @@
+#!/bin/sh
+
+# ===================================================================
+# nix/home-manager - https://github.com/nix-community/home-manager
+# ===================================================================
+
+install_home_manager()
+{
+  HOME_MANAGER_VERSION=$(home-manager --version)
+  if [ $? -eq 0 ]; then
+    echo "home-manager is already installed version=[$HOME_MANAGER_VERSION]"
+  else
+    HOME_MANAGER_ARCHIVE_URL=https://github.com/nix-community/home-manager/archive/master.tar.gz
+    echo "installing home-manager from $HOME_MANAGER_ARCHIVE_URL"
+
+    nix-channel --add $HOME_MANAGER_ARCHIVE_URL home-manager
+    nix-channel --update
+    nix-shell '<home-manager>' -A install
+  fi
+}
+
+switch_home()
+{
+  # download the latest rupurt/nix-home if we don't have it
+  if [ ! -e 'home.nix' ]; then
+    NIX_HOME_ARCHIVE_URL=https://github.com/rupurt/nix-home/archive/refs/heads/main.zip
+    echo "fetching nix-home from $NIX_HOME_ARCHIVE_URL"
+
+    curl -sSf -L $NIX_HOME_ARCHIVE_URL -o /tmp/nix-home.zip
+    unzip -o /tmp/nix-home.zip -d /tmp
+    cd /tmp/nix-home-main
+  fi
+
+  nix build .
+  home-manager switch --flake .
+}
+
+# ensure nix is installed and activated in the current shell
+if [ -x "$(command -v nix --version)" ]; then
+  install_home_manager
+  switch_home
+else
+  echo "nix is not installed or activated in the current shell"
+fi
