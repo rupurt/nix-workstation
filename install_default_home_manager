@@ -1,0 +1,9 @@
+#!/bin/sh
+
+OS=$(uname -s)
+
+if [ $OS = "Darwin" ]; then
+	make install.home_manager.mechanical-orchard-m2-macbook
+else
+	make install.home_manager.kawasaki
+fi

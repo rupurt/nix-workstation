@@ -20,12 +20,18 @@
 
     homeConfigurations = {
       "alex" = home-manager.lib.homeManagerConfiguration {
-        # Note: I am sure this could be done better with flake-utils or something
+        # TODO:
+        # - What does this actually do?
+        # - Why do all of the examples use x86 legacy packages?
         pkgs = nixpkgs.legacyPackages.x86_64-darwin;
 
         modules = [ 
           inputs.nixvim.homeManagerModules.nixvim
-          ./home.nix
+          ../home-shared.nix
+          {
+            home.username = "alex";
+            home.homeDirectory = "/Users/alex";
+          }
         ];
       };
     };

@@ -3,24 +3,20 @@
 let
 in {
   imports = [
-    ./modules/home-manager/tmux.nix
-    ./modules/home-manager/neovim.nix
-    ./modules/home-manager/zsh.nix
-    ./modules/home-manager/git.nix
-    ./modules/home-manager/direnv.nix
+    ../modules/home-manager/tmux.nix
+    ../modules/home-manager/neovim.nix
+    ../modules/home-manager/zsh.nix
+    ../modules/home-manager/git.nix
+    ../modules/home-manager/direnv.nix
   ];
 
   # Allow packages that need a license
   nixpkgs.config.allowUnfree = true;
 
-  # Home Manager needs a bit of information about you and the
-  # paths it should manage.
-  home.username = "alex";
-  home.homeDirectory = "/Users/alex";
-
   home.packages = with pkgs; [
     # system utils
     htop
+    bat
     # fails to build on m2
     # gotop
     # tree
@@ -34,7 +30,6 @@ in {
     jq
     jql
     fzf
-    # curl
     asciinema-agg
     grc
     hey

@@ -1,9 +1,13 @@
-all: install_nix install_home_manager
+all: install.nix install.home_manager
 
-install_nix: FRC
-	sh <install_nix
-FRC:
+install.nix:
+	@sh -s <install_nix
 
-install_home_manager: FRC
-	sh <install_home_manager
-FRC:
+install.home_manager:
+	@./install_default_home_manager
+
+install.home_manager.mechanical-orchard-m2-macbook:
+	@sh -s <install_home_manager -- --device mechanical-orchard-m2-macbook
+
+install.home_manager.kawasaki:
+	@sh -s <install_home_manager -- --device kawasaki

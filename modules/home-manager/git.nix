@@ -6,12 +6,6 @@
     userName = "Alex Kwiatkowski";
     userEmail = "alex+git@fremantle.io";
 
-    extraConfig = {
-      init = {
-        defaultBranch = "main";
-      };
-    };
-
     ignores = [
       # ".venv"
     ];
@@ -22,6 +16,13 @@
       w = "whatchanged";
       fo = "fetch origin";
       pr = "pull --rebase";
+    };
+
+    difftastic.enable = true;
+
+    extraConfig = {
+      init.defaultBranch = "main";
+      pager.diff = false;
     };
   };
 }

@@ -11,8 +11,13 @@ sh <(curl -L https://raw.githubusercontent.com/rupurt/nix-home/main/install_nix)
 Open a separate shell to activate `nix` after the initial install
 
 ```sh
-sh <(curl -L https://raw.githubusercontent.com/rupurt/nix-home/main/install_home_manager)
+sh -s <(curl -L https://raw.githubusercontent.com/rupurt/nix-home/main/install_home_manager) -- --device kawasaki
 ```
+
+## Devices
+
+- `kawasaki`
+- `mechanical-orchard-m2-macbook`
 
 ## Contributing
 
