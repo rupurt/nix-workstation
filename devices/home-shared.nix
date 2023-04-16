@@ -1,7 +1,6 @@
 { config, lib, pkgs, ... }:
 
-let
-in {
+{
   imports = [
     ../modules/home-manager/tmux.nix
     ../modules/home-manager/neovim.nix
@@ -10,20 +9,18 @@ in {
     ../modules/home-manager/direnv.nix
   ];
 
-  # Allow packages that need a license
+  # Allow packages that need a paid license
   nixpkgs.config.allowUnfree = true;
 
   home.packages = with pkgs; [
     # system utils
     htop
     bat
-    # fails to build on m2
-    # gotop
-    # tree
-    # qemu
+    tree
+    qemu
     # network utils
-    # wireguard-tools
-    # tailscale
+    wireguard-tools
+    tailscale
     whois
     # general utils
     silver-searcher
@@ -53,6 +50,7 @@ in {
     grafana
     # docker
     # docker-buildx
+    # docker-compose
     # k8s
     kubectl
     kubernetes-helm

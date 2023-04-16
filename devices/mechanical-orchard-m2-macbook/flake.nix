@@ -28,9 +28,18 @@
         modules = [ 
           inputs.nixvim.homeManagerModules.nixvim
           ../home-shared.nix
+          ../home-shared-darwin.nix
+          # home-manager.darwinModules.home-manager
           {
             home.username = "alex";
             home.homeDirectory = "/Users/alex";
+
+            # homebrew.casks = [
+            #   "amazon-workspaces"
+            #   "tandem"
+            #   "dbeaver-community"
+            #   "dbvisualizer"
+            # ];
           }
         ];
       };
