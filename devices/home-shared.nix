@@ -82,7 +82,7 @@
     # redis
     redis
     # languages
-    # asdf
+    asdf
     # zig # marked as broken
     # zls
     # elixir_1_14
