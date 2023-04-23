@@ -6,7 +6,12 @@
   programs.nixvim = {
     enable = true;
 
-    colorschemes.gruvbox.enable = true;
+    colorschemes.base16 = {
+      enable = true;
+      colorscheme = "monokai";
+    };
+
+    globals.mapleader = " ";
 
     plugins = {
       comment-nvim = {
@@ -15,13 +20,11 @@
       copilot = {
         enable = true;
       };
-      # - has snippets
-      # - would not need luasnip
       coq-nvim = {
-         enable = true;
-         autoStart = true;
-         recommendedKeymaps = true;
-         installArtifacts = true;
+        enable = true;
+        autoStart = true;
+        recommendedKeymaps = true;
+        installArtifacts = true;
       };
       coq-thirdparty = {
         enable = true;
@@ -32,12 +35,8 @@
       goyo = {
         enable = true;
       };
-      # luasnip = {
-      #   enable = true;
-      # };
       lightline = {
         enable = true;
-        colorscheme = "wombat";
       };
       lsp = {
         enable = true;
@@ -49,12 +48,27 @@
           html.enable = true;
           jsonls.enable = true;
           lua-ls.enable = true;
+          nil_ls.enable = true;
+          pylsp.enable = true;
           pyright.enable = true;
-          rnix-lsp.enable = true;
           rust-analyzer.enable = true;
           tailwindcss.enable = true;
+          terraformls.enable = true;
           tsserver.enable = true;
+          yamlls.enable = true;
           zls.enable = true;
+        };
+        keymaps = {
+          lspBuf = {
+            K = "hover";
+            gD = "references";
+            gd = "definition";
+            gi = "implementation";
+            gt = "type_definition";
+            "<leader>f" = "format";
+            "<leader>rn" = "rename";
+            "<leader>ca" = "code_action";
+          };
         };
       };
       magma-nvim = {
@@ -63,8 +77,15 @@
       neorg = {
         enable = true;
       };
-      # causes cursor lag
       # noice = {
+      #   enable = true;
+      #   lsp.hover.enabled = true;
+      #   lsp.message.enabled = true;
+      #   lsp.signature.enabled = true;
+      #   notify.enabled = true;
+      #   popupmenu.enabled = true;
+      # };
+      # notify = {
       #   enable = true;
       # };
       nvim-osc52 = {
@@ -92,6 +113,9 @@
         enable = true;
       };
       treesitter = {
+        enable = true;
+      };
+      treesitter-playground = {
         enable = true;
       };
       trouble = {
@@ -124,8 +148,7 @@
       #   "{<CR>".action = "{<CR>}<ESC>0";
       #   "{;<CR>".action = "{<CR>};<ESC>0";
       # };
-      visual = {
-      };
+      visual = { };
     };
 
     options = {
