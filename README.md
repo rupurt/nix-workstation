@@ -14,6 +14,16 @@ Open a separate shell to activate `nix` after the initial install
 sh -s <(curl -L https://raw.githubusercontent.com/rupurt/nix-home/main/install_home_manager) -- --device kawasaki
 ```
 
+This config uses [zsh](https://www.zsh.org) as the default login shell. Linux hosts will need to
+manually add the path to the installed nix version of `zsh` and switch the default login shell
+
+```sh
+sudo sh -c 'echo $1 >> /etc/shells' -- $(which zsh)
+chsh $(which zsh)
+```
+
+Mac OS X >= Catalina (10.15) uses `zsh` by default
+
 ## Devices
 
 - `kawasaki`
