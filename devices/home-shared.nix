@@ -69,8 +69,6 @@
     flyctl
     # load testing
     k6
-    # api
-    # insomnia # not supported on darwin in 2022.6.0
     # kafka
     kcat
     kafkactl
