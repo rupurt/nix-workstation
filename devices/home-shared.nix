@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   imports = [
@@ -37,6 +37,8 @@
     tmuxinator
     git
     gh
+    gnumake
+    cmake
     cachix
     difftastic
     protobuf
