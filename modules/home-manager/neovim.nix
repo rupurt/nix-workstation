@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ ... }:
 
 {
   home.sessionVariables.EDITOR = "nvim";
@@ -41,6 +41,7 @@
       lsp = {
         enable = true;
         servers = {
+          clangd.enable = true;
           cssls.enable = true;
           elixirls.enable = true;
           eslint.enable = true;
