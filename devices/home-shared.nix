@@ -82,15 +82,9 @@
     # redis
     redis
     # languages
-    # asdf
-    # zig # marked as broken
-    # zls
-    # elixir_1_14
-    # elixir_ls
-    # nodejs-18_x
-    # go_1_20
     gopls
-    # python311
+    rust-analyzer
+    zls
 
     # kubectx
     # nodePackages.typescript-language-server
@@ -101,8 +95,6 @@
 
     # customNodePackages."@ansible/ansible-language-server"
     # customNodePackages."@withgraphite/graphite-cli"
-
-    # rust-analyzer
 
     (nerdfonts.override { fonts = [ "FiraCode" ]; })
   ];
