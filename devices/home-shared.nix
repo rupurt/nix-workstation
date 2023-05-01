@@ -84,6 +84,7 @@
     # redis
     redis
     # languages
+    jdk
     gopls
     rust-analyzer
     zls
