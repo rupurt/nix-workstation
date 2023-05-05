@@ -50,9 +50,9 @@
     hugo
     prometheus
     grafana
-    # docker
-    # docker-buildx
-    # docker-compose
+    docker
+    docker-buildx
+    docker-compose
     # k8s
     kubectl
     kubernetes-helm
