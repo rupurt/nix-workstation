@@ -13,6 +13,8 @@
 
     globals.mapleader = " ";
 
+    luaLoader.enable = true;
+
     plugins = {
       comment-nvim = {
         enable = true;
