@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ ... }:
 
 {
   programs.git = {
@@ -11,7 +11,7 @@
     ];
 
     aliases = {
-      s = "status";
+      st = "status";
       co = "checkout";
       w = "whatchanged";
       fo = "fetch origin";
