@@ -6,9 +6,8 @@
   programs.nixvim = {
     enable = true;
 
-    colorschemes.base16 = {
+    colorschemes.gruvbox = {
       enable = true;
-      colorscheme = "monokai";
     };
 
     globals.mapleader = " ";
