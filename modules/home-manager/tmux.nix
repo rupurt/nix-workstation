@@ -6,6 +6,11 @@
 
     escapeTime = 0;
 
+    plugins = with pkgs; [
+      tmuxPlugins.better-mouse-mode
+      tmuxPlugins.yank
+    ];
+
     extraConfig = ''
       # Set the default terminal terminfo
       set -g default-terminal "screen-256color"
@@ -21,6 +26,9 @@
       # Navigate history with vi keys
       set -g status-keys vi
       set -g mode-keys   vi
+
+      # Copy to primary clipboard
+      set -g @yank_selection 'primary'
     '';
   };
 }
