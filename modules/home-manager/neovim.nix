@@ -75,6 +75,13 @@
       magma-nvim = {
         enable = true;
       };
+      neogit = {
+        enable = true;
+        integrations = {
+          diffview = true;
+        };
+        useMagitKeybindings = true;
+      };
       neorg = {
         enable = true;
       };
@@ -134,7 +141,7 @@
           action = "<cmd>make<CR>";
         };
         "\\".action = "<cmd>Explore<CR>";
-        # "<space>f" = "vim.lsp.buf.format('textDocument/formatting')";
+        "<leader>g".action = "<cmd>DiffviewOpen<CR>";
       };
       # insert = {
       #   "\"".action = "\"\"<left>";
