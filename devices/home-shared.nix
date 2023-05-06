@@ -56,6 +56,7 @@
     # k8s
     kubectl
     kubernetes-helm
+    kubectx
     krew
     k9s
     skaffold
@@ -89,12 +90,10 @@
     rust-analyzer
     zls
 
-    # kubectx
     # nodePackages.typescript-language-server
     # nodePackages.vscode-langservers-extracted
     # nodePackages.eslint
     # nodePackages.prettier
-    # docker-compose
 
     # customNodePackages."@ansible/ansible-language-server"
     # customNodePackages."@withgraphite/graphite-cli"
