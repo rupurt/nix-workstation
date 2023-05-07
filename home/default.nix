@@ -3,7 +3,7 @@
 {
   imports = [
     ./tmux.nix
-    ./neovim.nix
+    ./neovim
     ./zsh.nix
     ./git.nix
     ./direnv.nix
