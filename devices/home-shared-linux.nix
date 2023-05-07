@@ -3,7 +3,8 @@
 {
   home.packages = with pkgs; [
     # shell
-    zsh
+	# zsh doesn't seem to be explicitly needed
+    # zsh
     # system utils
     gotop
     # docker

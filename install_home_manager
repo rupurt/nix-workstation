@@ -1,8 +1,5 @@
 #!/bin/sh
 
-DEVICE_SWITCH=$1
-DEVICE=$2
-
 # ===================================================================
 # nix/home-manager - https://github.com/nix-community/home-manager
 # ===================================================================
@@ -22,27 +19,6 @@ install_home_manager()
   fi
 }
 
-check_device()
-{
-  # check that a supported device is given as an argument
-  SUPPORTED_DEVICE_KAWASAKI="kawasaki"
-  SUPPORTED_DEVICE_MECHANICAL_ORCHARD_M2_MACBOOK="mechanical-orchard-m2-macbook"
-  SUPPORTED_DEVICES="$SUPPORTED_DEVICE_KAWASAKI $SUPPORTED_DEVICE_MECHANICAL_ORCHARD_M2_MACBOOK"
-  echo "supported devices=$SUPPORTED_DEVICES"
-
-  if [ $DEVICE_SWITCH != "--device" ] || [ -z $DEVICE ]; then
-    echo "--device <device_name> is required"
-    exit 1
-  fi
-
-  if [ $DEVICE = $SUPPORTED_DEVICE_KAWASAKI ] || [ $DEVICE = $SUPPORTED_DEVICE_MECHANICAL_ORCHARD_M2_MACBOOK ]; then
-    echo "supported device=$DEVICE"
-  else
-    echo "unsupported device=$DEVICE"
-    exit 1
-  fi
-}
-
 switch_home()
 {
   # download the latest rupurt/nix-home if we don't have it
@@ -56,14 +32,12 @@ switch_home()
   fi
 
   # build and switch to the flake of the given device
-  cd devices/${DEVICE}
   home-manager switch --flake .
 }
 
 # ensure nix is installed and activated in the current shell
 if [ -x "$(command -v nix --version)" ]; then
   install_home_manager
-  check_device
   switch_home
 else
   echo "nix is not installed or activated in the current shell"
