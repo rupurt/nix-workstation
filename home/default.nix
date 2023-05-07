@@ -97,7 +97,6 @@
     jdk
     gopls
     rust-analyzer
-    zls
 
     # nodePackages.typescript-language-server
     # nodePackages.vscode-langservers-extracted

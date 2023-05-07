@@ -1,4 +1,4 @@
-{
+{ pkgs, zls, ... }: {
   programs.nixvim.plugins.lsp = {
     enable = true;
     servers = {
@@ -18,7 +18,10 @@
       terraformls.enable = true;
       tsserver.enable = true;
       yamlls.enable = true;
-      zls.enable = true;
+      zls = {
+        enable = true;
+        package = zls.packages.${pkgs.stdenv.hostPlatform.system}.default;
+      };
     };
     keymaps = {
       lspBuf = {
