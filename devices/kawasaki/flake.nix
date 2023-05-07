@@ -22,8 +22,8 @@
 
         modules = [ 
           inputs.nixvim.homeManagerModules.nixvim
-          ../home-shared.nix
-          ../home-shared-linux.nix
+          ../../home
+          ../../home/linux.nix
           {
             home.username = "alex";
             home.homeDirectory = "/home/alex";

@@ -27,8 +27,8 @@
 
         modules = [ 
           inputs.nixvim.homeManagerModules.nixvim
-          ../home-shared.nix
-          ../home-shared-darwin.nix
+          ../../home
+          ../../home/darwin.nix
           # home-manager.darwinModules.home-manager
           {
             home.username = "alex";

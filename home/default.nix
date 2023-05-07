@@ -2,11 +2,11 @@
 
 {
   imports = [
-    ../modules/home-manager/tmux.nix
-    ../modules/home-manager/neovim.nix
-    ../modules/home-manager/zsh.nix
-    ../modules/home-manager/git.nix
-    ../modules/home-manager/direnv.nix
+    ./tmux.nix
+    ./neovim.nix
+    ./zsh.nix
+    ./git.nix
+    ./direnv.nix
   ];
 
   # Allow packages that need a paid license
