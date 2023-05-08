@@ -1,6 +1,4 @@
-{ config, lib, pkgs, ... }:
-
-{
+{ lib, pkgs, ... }: {
   programs.zsh = {
     enable = true;
     enableCompletion = true;
@@ -53,13 +51,13 @@
     plugins = [
       {
         name = "powerlevel10k";
-        src = pkgs.callPackage ./p10k.nix {};
+        src = pkgs.callPackage ./p10k {};
         file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
       }
       {
         name = "powerlevel10k-config";
-        src = lib.cleanSource ./p10k-config;
-        file = "p10k.zsh";
+        src = lib.cleanSource ./p10k;
+        file = "config.zsh";
       }
       {
         name = "zsh-autosuggestions";
