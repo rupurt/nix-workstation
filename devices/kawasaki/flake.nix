@@ -24,6 +24,7 @@
           inputs.nixvim.homeManagerModules.nixvim
           ../../home
           ../../home/linux.nix
+          ../../home/neovim/options/linux.nix
           {
             home.username = "alex";
             home.homeDirectory = "/home/alex";

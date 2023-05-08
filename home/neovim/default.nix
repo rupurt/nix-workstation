@@ -3,6 +3,7 @@
 {
   imports = [
     ./plugins
+    ./options
   ];
 
   home.sessionVariables.EDITOR = "nvim";
@@ -39,16 +40,6 @@
       #   "{;<CR>".action = "{<CR>};<ESC>0";
       # };
       visual = { };
-    };
-
-    options = {
-      number = true;
-      expandtab = true;
-      tabstop = 2;
-      shiftwidth = 2;
-      clipboard = "unnamed"; # mac+windows
-      # clipboard = "unnamedplus"; # linux
-      wrap = false;
     };
 
     # extraConfigLua = ''
