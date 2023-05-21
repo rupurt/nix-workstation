@@ -6,10 +6,10 @@
 
 install_nix()
 {
-  INSTALL_URI=https://nixos.org/nix/install
-  echo "installing nix from $INSTALL_URI"
-
-  curl -sSf -L $INSTALL_URI | sh -s
+  # 2.15.0 breaks home-manager with new profile location
+  # - https://github.com/NixOS/nix/issues/7930
+  curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
+  source /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
 }
 
 # install nix if it's not currently installed and activated
