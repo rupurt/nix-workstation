@@ -41,6 +41,7 @@
     cmake
     cachix
     difftastic
+    minio-client
     protobuf
     packer
     wasmtime
