@@ -42,6 +42,7 @@
     cachix
     difftastic
     minio-client
+    mkcert
     protobuf
     packer
     wasmtime
