@@ -12,5 +12,6 @@
     # docker-compose
     # api
     insomnia
+    k3s
   ];
 }

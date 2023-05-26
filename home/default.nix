@@ -61,6 +61,9 @@
     kubectx
     krew
     k9s
+    # k3d nameclash
+    # https://github.com/NixOS/nixpkgs/blob/master/pkgs/top-level/aliases.nix#L780
+    kube3d
     skaffold
     # cloud
     awscli2
