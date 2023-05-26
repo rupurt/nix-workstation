@@ -56,6 +56,7 @@
     docker-buildx
     docker-compose
     # k8s
+    k3s
     kubectl
     kubernetes-helm
     kubectx
