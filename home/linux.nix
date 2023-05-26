@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   home.packages = with pkgs; [
@@ -12,5 +12,6 @@
     # docker-compose
     # api
     insomnia
+    k3s
   ];
 }

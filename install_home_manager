@@ -56,7 +56,7 @@ switch_home()
   fi
 
   # build and switch to the flake of the given device
-  cd devices/${DEVICE}
+  # cd devices/${DEVICE}
   home-manager switch --flake .
 }
 
