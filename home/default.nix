@@ -31,6 +31,7 @@
     grc
     hey
     hurl
+    neofetch
     rsync
     watchman
     # development utils
