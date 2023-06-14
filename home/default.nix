@@ -26,6 +26,7 @@
     silver-searcher
     jq
     jql
+    fq
     fzf
     asciinema-agg
     grc
