@@ -34,6 +34,8 @@
     neofetch
     rsync
     watchman
+    # reverse engineering
+    radare2
     # development utils
     tmuxinator
     git

@@ -11,6 +11,7 @@
     # docker-buildx
     # docker-compose
     # api
+    iaito
     insomnia
     k3s
   ];
