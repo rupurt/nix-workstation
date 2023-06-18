@@ -1,5 +1,4 @@
 { pkgs, ... }:
-
 {
   imports = [
     ./tmux.nix
@@ -7,108 +6,18 @@
     ./zsh.nix
     ./git.nix
     ./direnv.nix
+    ./packages
   ];
 
-  # Allow packages that need a paid license
-  nixpkgs.config.allowUnfree = true;
+  # homebrew.casks = [
+  #   # "amazon-workspaces"
+  #   # "tandem"
+  #   "dbeaver-community"
+  #   # "dbvisualizer"
+  # ];
 
-  home.packages = with pkgs; [
-    # system utils
-    htop
-    bat
-    tree
-    qemu
-    # network utils
-    wireguard-tools
-    tailscale
-    whois
-    # general utils
-    silver-searcher
-    jq
-    jql
-    fq
-    fzf
-    asciinema-agg
-    grc
-    hey
-    hurl
-    neofetch
-    rsync
-    watchman
-    # reverse engineering
-    radare2
-    # development utils
-    tmuxinator
-    git
-    gh
-    gnumake
-    cmake
-    cachix
-    difftastic
-    minio-client
-    mkcert
-    protobuf
-    packer
-    wasmtime
-    upx
-    upterm
-    #vscode
-    hugo
-    prometheus
-    grafana
-    docker
-    docker-buildx
-    docker-compose
-    # k8s
-    kubectl
-    kubernetes-helm
-    kubectx
-    krew
-    k9s
-    # k3d nameclash
-    # https://github.com/NixOS/nixpkgs/blob/master/pkgs/top-level/aliases.nix#L780
-    kube3d
-    skaffold
-    # cloud
-    awscli2
-    eksctl
-    (google-cloud-sdk.withExtraComponents ([
-      google-cloud-sdk.components.gke-gcloud-auth-plugin
-    ]))
-    terraform
-    terraform-ls
-    pulumi
-    flyctl
-    # load testing
-    k6
-    # kafka
-    kcat
-    kafkactl
-    #redpanda
-    # sql
-    usql
-    duckdb
-    octosql
-    sqlite
-    sqlite-utils
-    # redis
-    redis
-    # languages
-    jdk
-    gopls
-    rust-analyzer
-    zls
-
-    # nodePackages.typescript-language-server
-    # nodePackages.vscode-langservers-extracted
-    # nodePackages.eslint
-    # nodePackages.prettier
-
-    # customNodePackages."@ansible/ansible-language-server"
-    # customNodePackages."@withgraphite/graphite-cli"
-
-    (nerdfonts.override { fonts = [ "FiraCode" ]; })
-  ];
+  home.username = "alex";
+  home.homeDirectory = if pkgs.stdenv.isDarwin then "/Users/alex" else "/home/alex";
 
   fonts.fontconfig.enable = true;
 

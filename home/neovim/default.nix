@@ -1,5 +1,4 @@
 { ... }:
-
 {
   imports = [
     ./plugins
@@ -13,8 +12,14 @@
     globals.mapleader = " ";
     luaLoader.enable = true;
 
-    colorschemes.gruvbox = {
-      enable = true;
+    colorschemes = {
+      gruvbox = {
+        enable = false;
+      };
+      rose-pine = {
+        enable = true;
+        style = "moon";
+      };
     };
 
     maps = {
