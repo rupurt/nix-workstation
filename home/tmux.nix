@@ -5,6 +5,7 @@
     enable = true;
 
     escapeTime = 0;
+    historyLimit = 4096;
 
     plugins = with pkgs; [
       tmuxPlugins.better-mouse-mode

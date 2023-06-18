@@ -1,11 +1,12 @@
 {
   imports = [
+    ./bufferline.nix
     ./comment-nvim.nix
-    ./copilot.nix
+    ./copilot-lua.nix
+    ./copilot-vim.nix
     ./coq-nvim.nix
     ./coq-thirdparty.nix
     ./goyo.nix
-    ./lightline.nix
     ./lsp.nix
     ./magma-nvim.nix
     ./neogit.nix

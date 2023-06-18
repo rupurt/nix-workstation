@@ -1,10 +1,11 @@
-{ lib, ...}: {
+{ pkgs, ... }:
+{
   programs.nixvim.options = {
     number = true;
     expandtab = true;
     tabstop = 2;
     shiftwidth = 2;
-    clipboard = lib.mkDefault "unnamed"; # mac+windows
+    clipboard = if pkgs.stdenv.isDarwin then "unnamed" else "unnamedplus";
     wrap = false;
   };
 }
