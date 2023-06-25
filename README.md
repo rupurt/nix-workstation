@@ -24,11 +24,6 @@ chsh $(which zsh)
 
 Mac OS X >= Catalina (10.15) uses `zsh` by default
 
-## Devices
-
-- `kawasaki`
-- `mechanical-orchard-m2-macbook`
-
 ## Contributing
 
 Clone this repository locally
