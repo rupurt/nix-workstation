@@ -38,10 +38,15 @@
         };
       };
     in {
+      # packages exported by the flake
       packages = {
         homeConfigurations = homeConfigurations;
         default = home-manager.defaultPackage.${system};
       };
+
+      # nix fmt
+      formatter = pkgs.alejandra;
     });
-  in outputs;
+  in
+    outputs;
 }

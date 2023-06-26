@@ -1,5 +1,4 @@
-{ ... }:
-{
+{...}: {
   imports = [
     ./plugins
     ./options
@@ -44,7 +43,7 @@
       #   "{<CR>".action = "{<CR>}<ESC>0";
       #   "{;<CR>".action = "{<CR>};<ESC>0";
       # };
-      visual = { };
+      visual = {};
     };
 
     # extraConfigLua = ''

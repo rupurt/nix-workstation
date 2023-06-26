@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   imports = [
     ./tmux.nix
     ./neovim
@@ -17,7 +16,10 @@
   # ];
 
   home.username = "alex";
-  home.homeDirectory = if pkgs.stdenv.isDarwin then "/Users/alex" else "/home/alex";
+  home.homeDirectory =
+    if pkgs.stdenv.isDarwin
+    then "/Users/alex"
+    else "/home/alex";
 
   fonts.fontconfig.enable = true;
 
