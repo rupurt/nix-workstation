@@ -28,6 +28,10 @@
 
       # Copy to primary clipboard
       set -g @yank_selection 'primary'
+
+      # Set the window size to the smallest client
+      # - useful for remote pairing sessions
+      set-window-option -g window-size smallest
     '';
   };
 }
