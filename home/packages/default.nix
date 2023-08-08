@@ -42,7 +42,6 @@
       gh
       gnumake
       cmake
-      cachix
       difftastic
       mkcert
       protobuf
@@ -68,6 +67,9 @@
       # https://github.com/NixOS/nixpkgs/blob/master/pkgs/top-level/aliases.nix#L780
       kube3d
       skaffold
+      # k3d nameclash
+      _1password
+      _1password-gui
       # cloud
       awscli2
       eksctl
@@ -99,10 +101,6 @@
       zls
 
       (nerdfonts.override {fonts = ["FiraCode"];})
-    ]
-    ++ lib.optionals pkgs.stdenv.isDarwin [
-      _1password
-      _1password-gui
     ]
     ++ lib.optionals (!pkgs.stdenv.isDarwin) [
       zsh
