@@ -15,6 +15,7 @@
         pylsp.enable = true;
         pyright.enable = true;
         rust-analyzer.enable = true;
+        svelte.enable = true;
         tailwindcss.enable = true;
         terraformls.enable = true;
         tsserver.enable = true;
