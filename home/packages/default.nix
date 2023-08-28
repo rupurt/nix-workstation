@@ -51,9 +51,6 @@
       wasmtime
       upx
       hugo
-      docker
-      docker-buildx
-      docker-compose
       # observability
       prometheus
       grafana
@@ -106,6 +103,9 @@
     ]
     ++ lib.optionals (!pkgs.stdenv.isDarwin) [
       zsh
+      docker_24
+      docker-buildx
+      docker-compose
       gotop
       iaito
       insomnia
