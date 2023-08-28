@@ -13,6 +13,8 @@
       tree
       # network utils
       wireguard-tools
+      netbird
+      netbird-ui
       tailscale
       whois
       # general utils
