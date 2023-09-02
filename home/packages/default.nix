@@ -37,8 +37,6 @@
       fq
       # reverse engineering
       radare2
-      # emulation
-      qemu
       # remote
       upterm
       # development utils
