@@ -12,7 +12,6 @@
         jsonls.enable = true;
         lua-ls.enable = true;
         nil_ls.enable = true;
-        pylsp.enable = true;
         pyright.enable = true;
         rust-analyzer.enable = true;
         svelte.enable = true;
