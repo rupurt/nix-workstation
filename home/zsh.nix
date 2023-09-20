@@ -33,6 +33,7 @@
         "git"
         "grc"
         "kubectl"
+        "kubectl-autocomplete"
         "rsync"
         "sudo"
         "terraform"
