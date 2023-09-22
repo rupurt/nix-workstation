@@ -96,6 +96,9 @@
 
       (nerdfonts.override {fonts = ["FiraCode"];})
     ]
+    ++ lib.optionals (!pkgs.stdenv.isLinux) [
+      xclip
+    ]
     ++ lib.optionals (!pkgs.stdenv.isDarwin) [
       zsh
       docker_24
