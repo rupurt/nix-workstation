@@ -20,7 +20,6 @@
     ./telescope.nix
     ./todo-comments.nix
     ./treesitter.nix
-    ./treesitter-playground.nix
     ./trouble.nix
     ./vim-matchup.nix
   ];

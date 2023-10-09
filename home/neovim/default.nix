@@ -21,34 +21,19 @@
       };
     };
 
-    maps = {
-      normal = {
-        "<leader>m" = {
-          # silent = true;
-          action = "<cmd>make<CR>";
-        };
-        "\\".action = "<cmd>Explore<CR>";
-        "<leader>g".action = "<cmd>DiffviewOpen<CR>";
-      };
-      # insert = {
-      #   "\"".action = "\"\"<left>";
-      #   "'".action = "''<left>";
-      #   "(".action = "()<left>";
-      #   "(<CR>".action = "(<CR>)<ESC>0";
-      #   "(;<CR>".action = "(<CR>);<ESC>0";
-      #   "[".action = "[]<left>";
-      #   "[<CR>".action = "[<CR>]<ESC>0";
-      #   "[;<CR>".action = "[<CR>];<ESC>0";
-      #   "{".action = "{}<left>";
-      #   "{<CR>".action = "{<CR>}<ESC>0";
-      #   "{;<CR>".action = "{<CR>};<ESC>0";
-      # };
-      visual = {};
-    };
-
-    # extraConfigLua = ''
-    #   -- Print a little welcome message when nvim is opened!
-    #   print("Hello world!")
-    # '';
+    keymaps = [
+      {
+        action = "<cmd>make<CR>";
+        key = "<leader>m";
+      }
+      {
+        action = "<cmd>Explore<CR>";
+        key = "\\";
+      }
+      {
+        action = "<cmd>DiffviewOpen<CR>";
+        key = "<leader>g";
+      }
+    ];
   };
 }
