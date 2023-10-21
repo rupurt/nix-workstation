@@ -15,9 +15,11 @@
       bat
       tree
       # network utils
+      ipcalc
       wireguard-tools
       netbird
       netbird-ui
+      ngrok
       tailscale
       whois
       # general utils
