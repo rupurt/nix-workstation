@@ -44,6 +44,7 @@
       # development utils
       tmuxinator
       git
+      git-lfs
       gh
       gnumake
       cmake
