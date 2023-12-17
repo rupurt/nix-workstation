@@ -47,10 +47,8 @@
       git-lfs
       gh
       gnumake
-      cmake
       difftastic
       mkcert
-      protobuf
       packer
       wasmtime
       upx
