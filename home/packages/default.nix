@@ -98,6 +98,7 @@
       (nerdfonts.override {fonts = ["FiraCode"];})
     ]
     ++ lib.optionals (!pkgs.stdenv.isLinux) [
+      asitop
       xclip
     ]
     ++ lib.optionals (!pkgs.stdenv.isDarwin) [
