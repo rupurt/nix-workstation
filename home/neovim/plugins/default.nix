@@ -8,6 +8,7 @@
     ./coq-thirdparty.nix
     ./goyo.nix
     ./lsp.nix
+    ./lspsaga.nix
     ./magma-nvim.nix
     ./neogit.nix
     ./neorg.nix
