@@ -13,7 +13,11 @@
         lua-ls.enable = true;
         nil_ls.enable = true;
         pyright.enable = true;
-        rust-analyzer.enable = true;
+        rust-analyzer = {
+          enable = true;
+          installRustc = true;
+          installCargo = true;
+        };
         svelte.enable = true;
         tailwindcss.enable = true;
         terraformls.enable = true;
