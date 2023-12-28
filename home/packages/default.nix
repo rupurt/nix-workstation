@@ -97,15 +97,13 @@
 
       (nerdfonts.override {fonts = ["FiraCode"];})
     ]
-    ++ lib.optionals (!pkgs.stdenv.isLinux) [
+    ++ lib.optionals (pkgs.stdenv.isDarwin) [
       asitop
       xclip
     ]
-    ++ lib.optionals (!pkgs.stdenv.isDarwin) [
+    ++ lib.optionals (pkgs.stdenv.isLinux) [
       zsh
-      docker_24
-      docker-buildx
-      docker-compose
+      # docker
       gotop
       iaito
       insomnia

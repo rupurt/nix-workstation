@@ -28,7 +28,7 @@
         config.allowUnfree = true;
       };
       homeConfigurations = {
-        "alex" = home-manager.lib.homeManagerConfiguration {
+        alex = home-manager.lib.homeManagerConfiguration {
           pkgs = pkgs;
 
           modules = [
