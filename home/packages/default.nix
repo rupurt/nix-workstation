@@ -6,6 +6,8 @@
 
   home.packages = with pkgs;
     [
+      # fonts
+      monaspace
       # auth
       _1password
       _1password-gui
