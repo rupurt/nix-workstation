@@ -52,9 +52,6 @@
       wasmtime
       upx
       hugo
-      # observability
-      prometheus
-      grafana
       # storage
       minio-client
       # k8s
