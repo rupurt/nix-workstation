@@ -31,7 +31,7 @@ switch_home()
     cd /tmp/nix-home-main
   fi
 
-  home-manager switch --flake .
+  home-manager switch -b backup --flake .
 }
 
 # ensure nix is installed and activated in the current shell
