@@ -2,6 +2,7 @@
   imports = [
     ./bufferline.nix
     ./comment-nvim.nix
+    ./copilot-cmp.nix
     ./copilot-lua.nix
     ./copilot-vim.nix
     ./coq-nvim.nix
@@ -14,6 +15,7 @@
     ./neorg.nix
     # ./noice.nix
     # ./notify.nix
+    ./nvim-cmp.nix
     ./nvim-osc52.nix
     ./sniprun.nix
     ./specs.nix
