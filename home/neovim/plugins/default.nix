@@ -21,7 +21,6 @@
     ./telescope.nix
     ./todo-comments.nix
     ./treesitter.nix
-    ./trouble.nix
     ./vim-matchup.nix
   ];
 }

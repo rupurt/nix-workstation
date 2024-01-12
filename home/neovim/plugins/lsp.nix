@@ -13,6 +13,7 @@
         lua-ls.enable = true;
         nil_ls.enable = true;
         pyright.enable = true;
+        ruff-lsp.enable = true;
         rust-analyzer = {
           enable = true;
           installRustc = true;
@@ -27,13 +28,8 @@
       };
       keymaps = {
         lspBuf = {
-          K = "hover";
-          gD = "references";
-          gd = "definition";
           gi = "implementation";
           "<leader>f" = "format";
-          "<leader>rn" = "rename";
-          "<leader>ca" = "code_action";
         };
       };
     };
