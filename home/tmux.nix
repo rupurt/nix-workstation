@@ -12,9 +12,9 @@
 
     extraConfig = ''
       # Set the default terminal terminfo
-      set -g default-terminal "screen-256color"
+      set -g default-terminal "tmux-256color"
       # Tell Tmux that outside terminal supports true color
-      set -sa terminal-overrides ',xterm-256color:Tc'
+      set-option -sa terminal-features ',xterm-kitty:Tc'
 
       # Copy using mouse with copy-mode
       set -g mouse on
