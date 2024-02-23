@@ -45,6 +45,7 @@
       tmuxinator
       git
       gh
+      subgit
       gnumake
       difftastic
       mkcert
