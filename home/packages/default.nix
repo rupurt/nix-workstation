@@ -79,7 +79,6 @@
       #redpanda
       # sql
       usql
-      duckdb
       octosql
       sqlite
       sqlite-utils
