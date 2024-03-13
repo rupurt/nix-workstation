@@ -46,7 +46,6 @@
       git
       gh
       subgit
-      gnumake
       difftastic
       mkcert
       packer
