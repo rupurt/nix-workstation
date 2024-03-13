@@ -15,7 +15,7 @@
     ./neorg.nix
     # ./noice.nix
     # ./notify.nix
-    ./nvim-cmp.nix
+    ./cmp.nix
     ./nvim-osc52.nix
     ./sniprun.nix
     # ./specs.nix
