@@ -18,11 +18,14 @@
     ./nvim-cmp.nix
     ./nvim-osc52.nix
     ./sniprun.nix
-    ./specs.nix
+    # ./specs.nix
     ./surround.nix
     ./telescope.nix
     ./todo-comments.nix
     ./treesitter.nix
+    # ./treesitter-context.nix
+    ./treesitter-refactor.nix
+    ./treesitter-textobjects.nix
     ./vim-matchup.nix
   ];
 }
