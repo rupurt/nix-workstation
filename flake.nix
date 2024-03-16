@@ -12,6 +12,10 @@
       url = "github:pta2002/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    neovim-nightly-overlay = {
+      url = "github:nix-community/neovim-nightly-overlay";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
@@ -19,6 +23,7 @@
     flake-utils,
     home-manager,
     nixvim,
+    neovim-nightly-overlay,
     ...
   }: let
     systems = ["x86_64-linux" "aarch64-linux" "x86_64-darwin" "aarch64-darwin"];
@@ -26,6 +31,9 @@
       pkgs = import nixpkgs {
         inherit system;
         config.allowUnfree = true;
+        overlays = [
+          neovim-nightly-overlay.overlay
+        ];
       };
       homeConfigurations = {
         alex = home-manager.lib.homeManagerConfiguration {

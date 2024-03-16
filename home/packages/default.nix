@@ -6,6 +6,8 @@
 
   home.packages = with pkgs;
     [
+      # nix
+      cachix
       # auth
       _1password
       _1password-gui

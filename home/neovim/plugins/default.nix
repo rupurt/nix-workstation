@@ -24,7 +24,7 @@
     ./todo-comments.nix
     ./treesitter.nix
     # ./treesitter-context.nix
-    ./treesitter-refactor.nix
+    # ./treesitter-refactor.nix
     ./treesitter-textobjects.nix
     ./vim-matchup.nix
   ];
