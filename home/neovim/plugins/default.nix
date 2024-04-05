@@ -1,7 +1,7 @@
 {
   imports = [
     ./bufferline.nix
-    ./comment-nvim.nix
+    ./comment.nix
     ./copilot-cmp.nix
     ./copilot-lua.nix
     ./copilot-vim.nix

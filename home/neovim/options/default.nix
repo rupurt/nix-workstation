@@ -1,5 +1,5 @@
 {pkgs, ...}: {
-  programs.nixvim.options = {
+  programs.nixvim.opts = {
     number = true;
     expandtab = true;
     tabstop = 2;

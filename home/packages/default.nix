@@ -101,7 +101,7 @@
     ++ lib.optionals (pkgs.stdenv.isLinux) [
       zsh
       # gpu
-      nvtop
+      nvtopPackages.full
       # docker
       gotop
       iaito
