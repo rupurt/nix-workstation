@@ -14,8 +14,10 @@
       # system utils
       htop
       btop
+      zenith
       bat
       tree
+      pax-utils
       # network utils
       ipcalc
       wireguard-tools
