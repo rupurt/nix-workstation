@@ -108,5 +108,7 @@
       gotop
       iaito
       insomnia
+      # mainframe
+      x3270
     ];
 }
