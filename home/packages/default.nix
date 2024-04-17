@@ -26,6 +26,7 @@
       ngrok
       tailscale
       whois
+      gftp
       # general utils
       ripgrep
       silver-searcher
