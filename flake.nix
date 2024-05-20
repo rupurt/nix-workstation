@@ -23,7 +23,7 @@
     flake-utils,
     home-manager,
     nixvim,
-    neovim-nightly-overlay,
+    # neovim-nightly-overlay,
     ...
   }: let
     systems = ["x86_64-linux" "aarch64-linux" "x86_64-darwin" "aarch64-darwin"];
@@ -32,7 +32,7 @@
         inherit system;
         config.allowUnfree = true;
         overlays = [
-          neovim-nightly-overlay.overlay
+          # neovim-nightly-overlay.overlay
         ];
       };
       homeConfigurations = {

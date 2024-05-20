@@ -15,9 +15,32 @@
       gruvbox = {
         enable = false;
       };
+      onedark = {
+        enable = false;
+        settings = {
+          style = "cool";
+        };
+      };
+      oxocarbon = {
+        enable = false;
+      };
+      poimandres = {
+        enable = false;
+      };
       rose-pine = {
+        enable = false;
+        settings = {
+          dark_variant = "moon";
+        };
+      };
+      tokyonight = {
         enable = true;
-        style = "moon";
+        settings = {
+          style = "storm";
+        };
+      };
+      vscode = {
+        enable = false;
       };
     };
 
