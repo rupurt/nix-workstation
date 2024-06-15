@@ -20,7 +20,6 @@
       pax-utils
       # network utils
       tcpdump
-      dhcpdump
       junkie
       ipcalc
       wireguard-tools
@@ -112,6 +111,8 @@
     ]
     ++ lib.optionals (pkgs.stdenv.isLinux) [
       zsh
+      # network utils
+      dhcpdump
       # docker
       # gpu
       nvtopPackages.full
