@@ -41,6 +41,8 @@
       neofetch
       rsync
       watchman
+      unzip
+      gzip
       # data utils
       jq
       jql
@@ -106,9 +108,9 @@
     ]
     ++ lib.optionals (pkgs.stdenv.isLinux) [
       zsh
+      # docker
       # gpu
       nvtopPackages.full
-      # docker
       gotop
       iaito
       insomnia
