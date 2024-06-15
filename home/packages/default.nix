@@ -51,8 +51,10 @@
       radare2
       # remote
       upterm
-      # development utils
+      # tmux
       tmuxinator
+      tmuxp
+      # development utils
       git
       gh
       subgit
