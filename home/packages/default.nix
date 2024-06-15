@@ -26,7 +26,6 @@
       wireguard-tools
       netbird
       netbird-ui
-      ngrok
       tailscale
       whois
       gftp
@@ -41,6 +40,9 @@
       neofetch
       rsync
       watchman
+      # http
+      httpstat
+      # compression
       unzip
       gzip
       # data utils
@@ -51,13 +53,15 @@
       radare2
       # remote
       upterm
+      ngrok
       # tmux
       tmuxinator
       tmuxp
-      # development utils
+      # git
       git
       gh
       subgit
+      # development utils
       difftastic
       mkcert
       packer
