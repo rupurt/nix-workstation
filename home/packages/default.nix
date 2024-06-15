@@ -19,6 +19,9 @@
       tree
       pax-utils
       # network utils
+      tcpdump
+      dhcpdump
+      junkie
       ipcalc
       wireguard-tools
       netbird
