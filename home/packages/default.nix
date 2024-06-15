@@ -92,10 +92,8 @@
       # kafka
       kcat
       kafkactl
-      #redpanda
       # sql
       usql
-      octosql
       sqlite
       sqlite-utils
       # redis
