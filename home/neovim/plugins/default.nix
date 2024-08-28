@@ -16,7 +16,8 @@
     # ./noice.nix
     # ./notify.nix
     ./cmp.nix
-    ./nvim-osc52.nix
+    # OSC52 now part of neovim 0.10
+    # ./nvim-osc52.nix
     ./sniprun.nix
     # ./specs.nix
     ./surround.nix

@@ -24,7 +24,8 @@
         terraformls.enable = true;
         tsserver.enable = true;
         yamlls.enable = true;
-        zls.enable = true;
+        # zls fails to compile on darwin with the current flake.lock
+        zls.enable = false;
       };
       keymaps = {
         lspBuf = {

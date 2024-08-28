@@ -10,7 +10,7 @@
       cachix
       # auth
       _1password
-      _1password-gui
+      # _1password-gui
       # system utils
       htop
       btop
@@ -20,7 +20,6 @@
       pax-utils
       # network utils
       tcpdump
-      junkie
       ipcalc
       wireguard-tools
       netbird
@@ -52,7 +51,8 @@
       radare2
       # remote
       upterm
-      ngrok
+      # terminals
+      wezterm
       # tmux
       tmuxinator
       tmuxp
@@ -82,26 +82,20 @@
       (google-cloud-sdk.withExtraComponents [
         google-cloud-sdk.components.gke-gcloud-auth-plugin
       ])
-      terraform
-      terraform-ls
-      pulumi
-      flyctl
       # load testing
       k6
-      # kafka
-      kcat
-      kafkactl
       # sql
       usql
       sqlite
       sqlite-utils
       # redis
       redis
-      # languages
-      jdk
-      gopls
-      rust-analyzer
-      zls
+      # # languages
+      # jdk
+      # gopls
+      # rust-analyzer
+      # zls
+      # terraform-ls
 
       (nerdfonts.override {fonts = ["FiraCode"];})
     ]
@@ -113,12 +107,16 @@
       zsh
       # network utils
       dhcpdump
+      junkie
       # docker
       # gpu
       nvtopPackages.full
       gotop
       iaito
       insomnia
+      # remote
+      # ngrok is broken SSL routines::wrong version number
+      # ngrok
       # mainframe
       x3270
     ];
