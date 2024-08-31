@@ -63,7 +63,6 @@
       # development utils
       difftastic
       mkcert
-      packer
       wasmtime
       upx
       hugo
