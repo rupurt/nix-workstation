@@ -107,6 +107,8 @@
       # network utils
       dhcpdump
       junkie
+      # observability
+      osquery
       # docker
       # gpu
       nvtopPackages.full
