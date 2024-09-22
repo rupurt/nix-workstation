@@ -22,7 +22,8 @@
         svelte.enable = true;
         tailwindcss.enable = true;
         terraformls.enable = true;
-        tsserver.enable = true;
+        # tsserver.enable = true;
+        ts-ls.enable = true;
         yamlls.enable = true;
         # zls fails to compile on darwin with the current flake.lock
         zls.enable = false;
