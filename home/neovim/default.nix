@@ -5,6 +5,7 @@
   ];
 
   home.sessionVariables.EDITOR = "nvim";
+  home.sessionVariables.MANPAGER = "nvim +Man!";
 
   programs.nixvim = {
     enable = true;
