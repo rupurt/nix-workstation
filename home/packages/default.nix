@@ -9,7 +9,7 @@
       # nix
       cachix
       # auth
-      _1password
+      _1password-cli
       # _1password-gui
       # system utils
       htop

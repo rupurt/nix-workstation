@@ -1,13 +1,15 @@
 {
   imports = [
+    ./avante.nix
     ./bufferline.nix
+    ./cmp.nix
     ./comment.nix
-    ./copilot-chat.nix
+    # ./copilot-chat.nix
     ./copilot-cmp.nix
     ./copilot-lua.nix
-    ./copilot-vim.nix
-    ./coq-nvim.nix
-    ./coq-thirdparty.nix
+    # ./copilot-vim.nix
+    # ./coq-nvim.nix
+    # ./coq-thirdparty.nix
     ./goyo.nix
     ./helm.nix
     ./lsp.nix
@@ -17,7 +19,6 @@
     ./neorg.nix
     # ./noice.nix
     # ./notify.nix
-    ./cmp.nix
     # OSC52 now part of neovim 0.10
     # ./nvim-osc52.nix
     ./sniprun.nix
