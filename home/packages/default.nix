@@ -9,7 +9,7 @@
       # nix
       cachix
       # auth
-      _1password
+      _1password-cli
       # _1password-gui
       # system utils
       htop
@@ -26,7 +26,7 @@
       netbird-ui
       tailscale
       whois
-      gftp
+      # gftp
       # general utils
       ripgrep
       silver-searcher
@@ -51,8 +51,6 @@
       radare2
       # remote
       upterm
-      # terminals
-      wezterm
       # tmux
       tmuxinator
       tmuxp
@@ -76,7 +74,7 @@
       k9s
       skaffold
       # cloud
-      awscli2
+      # awscli2
       eksctl
       (google-cloud-sdk.withExtraComponents [
         google-cloud-sdk.components.gke-gcloud-auth-plugin
@@ -89,14 +87,6 @@
       sqlite-utils
       # redis
       redis
-      # # languages
-      # jdk
-      # gopls
-      # rust-analyzer
-      # zls
-      # terraform-ls
-
-      (nerdfonts.override {fonts = ["FiraCode"];})
     ]
     ++ lib.optionals (pkgs.stdenv.isDarwin) [
       asitop
@@ -109,7 +99,6 @@
       junkie
       # observability
       osquery
-      # docker
       # gpu
       nvtopPackages.full
       gotop

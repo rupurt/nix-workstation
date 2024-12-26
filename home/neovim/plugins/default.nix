@@ -1,5 +1,6 @@
 {
   imports = [
+    ./avante.nix
     ./bufferline.nix
     ./comment.nix
     ./copilot-chat.nix
