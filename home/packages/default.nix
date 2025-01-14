@@ -10,7 +10,6 @@
       cachix
       # auth
       _1password-cli
-      # _1password-gui
       # system utils
       htop
       btop
@@ -93,7 +92,10 @@
       xclip
     ]
     ++ lib.optionals (pkgs.stdenv.isLinux) [
+      # shell
       zsh
+      # terminal
+      ghostty
       # network utils
       dhcpdump
       junkie
