@@ -1,13 +1,16 @@
 {
   imports = [
+    ./avante.nix
     ./bufferline.nix
     ./comment.nix
+    ./copilot-chat.nix
     ./copilot-cmp.nix
     ./copilot-lua.nix
     ./copilot-vim.nix
     ./coq-nvim.nix
     ./coq-thirdparty.nix
     ./goyo.nix
+    ./helm.nix
     ./lsp.nix
     ./lspsaga.nix
     ./magma-nvim.nix
@@ -20,7 +23,7 @@
     # ./nvim-osc52.nix
     ./sniprun.nix
     # ./specs.nix
-    ./surround.nix
+    ./vim-surround.nix
     ./telescope.nix
     ./todo-comments.nix
     ./treesitter.nix
@@ -28,5 +31,6 @@
     # ./treesitter-refactor.nix
     ./treesitter-textobjects.nix
     ./vim-matchup.nix
+    ./web-devicons.nix
   ];
 }
