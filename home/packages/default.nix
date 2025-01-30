@@ -85,6 +85,12 @@
       sqlite-utils
       # redis
       redis
+      # ai
+      ollama
+      # TODO:
+      # - oterm is fixed on main
+      # - https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/by-name/ot/oterm/package.nix#L52
+      # oterm
     ]
     ++ lib.optionals (pkgs.stdenv.isDarwin) [
       asitop
