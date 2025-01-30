@@ -24,6 +24,7 @@
     ./sniprun.nix
     # ./specs.nix
     ./vim-surround.nix
+    ./tailwind-tools.nix
     ./telescope.nix
     ./todo-comments.nix
     ./treesitter.nix
