@@ -9,15 +9,13 @@
       # nix
       cachix
       # auth
-      _1password
-      # _1password-gui
+      _1password-cli
       # system utils
       htop
       btop
       zenith
       bat
       tree
-      pax-utils
       # network utils
       tcpdump
       ipcalc
@@ -26,7 +24,7 @@
       netbird-ui
       tailscale
       whois
-      gftp
+      # gftp
       # general utils
       ripgrep
       silver-searcher
@@ -51,8 +49,6 @@
       radare2
       # remote
       upterm
-      # terminals
-      wezterm
       # tmux
       tmuxinator
       tmuxp
@@ -76,7 +72,7 @@
       k9s
       skaffold
       # cloud
-      awscli2
+      # awscli2
       eksctl
       (google-cloud-sdk.withExtraComponents [
         google-cloud-sdk.components.gke-gcloud-auth-plugin
@@ -89,14 +85,6 @@
       sqlite-utils
       # redis
       redis
-      # # languages
-      # jdk
-      # gopls
-      # rust-analyzer
-      # zls
-      # terraform-ls
-
-      (nerdfonts.override {fonts = ["FiraCode"];})
     ]
     ++ lib.optionals (pkgs.stdenv.isDarwin) [
       asitop
@@ -107,9 +95,10 @@
       # network utils
       dhcpdump
       junkie
+      # system utils
+      pax-utils
       # observability
       osquery
-      # docker
       # gpu
       nvtopPackages.full
       gotop
