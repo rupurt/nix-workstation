@@ -91,7 +91,10 @@
       xclip
     ]
     ++ lib.optionals (pkgs.stdenv.isLinux) [
+      # shell
       zsh
+      # terminal
+      ghostty
       # network utils
       dhcpdump
       junkie
