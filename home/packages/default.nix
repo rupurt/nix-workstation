@@ -34,6 +34,7 @@
       hey
       hurl
       neofetch
+      fastfetch
       rsync
       watchman
       # http
