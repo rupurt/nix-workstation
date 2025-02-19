@@ -53,7 +53,8 @@
       # tmux
       tmuxinator
       tmuxp
-      # git
+      # source control
+      cvsps
       git
       gh
       subgit
